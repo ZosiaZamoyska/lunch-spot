@@ -6,6 +6,10 @@ export interface Location {
   waitTime: 'short' | 'medium' | 'long';
   atmosphere: 'quiet' | 'moderate' | 'lively';
   foodTypes: string[];
+  coordinates: {
+    lat: number;
+    lng: number;
+  };
 }
 
 export const locations: Location[] = [
@@ -16,7 +20,8 @@ export const locations: Location[] = [
     priceRange: 'budget',
     waitTime: 'short',
     atmosphere: 'lively',
-    foodTypes: ['korean', 'western', 'asian']
+    foodTypes: ['korean', 'western', 'asian'],
+    coordinates: { lat: 36.3733, lng: 127.3624 }
   },
   { 
     name: 'Student Cafeteria', 
@@ -25,7 +30,8 @@ export const locations: Location[] = [
     priceRange: 'budget',
     waitTime: 'short',
     atmosphere: 'lively',
-    foodTypes: ['korean', 'western']
+    foodTypes: ['korean', 'western'],
+    coordinates: { lat: 36.3715, lng: 127.3598 }
   },
   { 
     name: 'Graduate Cafeteria', 
@@ -34,7 +40,8 @@ export const locations: Location[] = [
     priceRange: 'budget',
     waitTime: 'short',
     atmosphere: 'quiet',
-    foodTypes: ['korean', 'western']
+    foodTypes: ['korean', 'western'],
+    coordinates: { lat: 36.3745, lng: 127.3650 }
   },
   { 
     name: 'Faculty Cafeteria', 
@@ -43,7 +50,8 @@ export const locations: Location[] = [
     priceRange: 'moderate',
     waitTime: 'medium',
     atmosphere: 'quiet',
-    foodTypes: ['korean', 'western', 'asian']
+    foodTypes: ['korean', 'western', 'asian'],
+    coordinates: { lat: 36.3738, lng: 127.3630 }
   },
   { 
     name: 'Taeulgwan', 
@@ -52,7 +60,8 @@ export const locations: Location[] = [
     priceRange: 'budget',
     waitTime: 'short',
     atmosphere: 'moderate',
-    foodTypes: ['korean']
+    foodTypes: ['korean'],
+    coordinates: { lat: 36.3730, lng: 127.3620 }
   },
   { 
     name: 'Quiznos', 
@@ -61,7 +70,8 @@ export const locations: Location[] = [
     priceRange: 'moderate',
     waitTime: 'medium',
     atmosphere: 'moderate',
-    foodTypes: ['western', 'sandwiches']
+    foodTypes: ['western', 'sandwiches'],
+    coordinates: { lat: 36.3735, lng: 127.3628 }
   },
   { 
     name: 'Subway', 
@@ -70,7 +80,8 @@ export const locations: Location[] = [
     priceRange: 'moderate',
     waitTime: 'medium',
     atmosphere: 'moderate',
-    foodTypes: ['western', 'sandwiches']
+    foodTypes: ['western', 'sandwiches'],
+    coordinates: { lat: 36.3742, lng: 127.3645 }
   },
 ];
 

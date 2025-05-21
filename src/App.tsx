@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { questions, locations, getRecommendation } from './data/locations'
 import { getMenuForCafeteria } from './data/menus'
+import Map from './components/Map'
 import './App.css'
 
 function App() {
@@ -60,6 +61,11 @@ function App() {
                 <p className="text-xs text-gray-500 mt-3">Menu for {new Date(menu.date).toLocaleDateString()}</p>
               </div>
             )}
+
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold text-white mb-3">Location</h3>
+              <Map location={recommendation} />
+            </div>
           </div>
           <button
             onClick={resetQuiz}

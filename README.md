@@ -10,6 +10,7 @@ A fun and intuitive web application that helps KAIST students and staff find the
 - ♿ Accessibility features included
 - 🔄 Dynamic progress tracking
 - 🎲 Randomization to keep recommendations fresh
+- 🗺️ Interactive map to locate lunch spots
 
 ## How It Works
 
@@ -46,6 +47,7 @@ A fun and intuitive web application that helps KAIST students and staff find the
 ### Prerequisites
 - Node.js (v14 or higher)
 - npm or yarn
+- Google Maps API key
 
 ### Setup
 1. Clone the repository
@@ -53,7 +55,12 @@ A fun and intuitive web application that helps KAIST students and staff find the
    ```bash
    npm install
    ```
-3. Start the development server:
+3. Set up environment variables:
+   - Copy `.env.example` to `.env`
+   - Get a Google Maps API key from the [Google Cloud Console](https://console.cloud.google.com/)
+   - Enable the Maps JavaScript API in your Google Cloud project
+   - Add your API key to the `.env` file
+4. Start the development server:
    ```bash
    npm run dev
    ```
@@ -63,6 +70,7 @@ A fun and intuitive web application that helps KAIST students and staff find the
 - TypeScript
 - Tailwind CSS
 - Vite
+- Google Maps API
 
 ## Contributing
 
